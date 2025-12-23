@@ -1,0 +1,119 @@
+
+/* General Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+/* Body */
+body{
+    background:#f5f5f5;
+}
+
+/* Header */
+header{
+    background:#eeeff1;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+.logo img{
+    width:40px;
+}
+.logo img:hover{
+    transform: scale(1.1);
+}
+.header-btn a{
+    text-decoration:none;
+    padding:8px 18px;
+    border-radius:0.5rem;
+    border:1px solid #B22222;
+    font-weight:500;
+    color:#444;
+    transition:0.3s;
+}
+.header-btn a:hover{
+    background:#B22222;
+    color:#fff;
+}
+
+/* Main form */
+main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    padding-top:80px;
+}
+.form-container{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    max-width:400px;
+    width:100%;
+    text-align:center;
+}
+.form-container h2{
+    color:#B22222;
+    margin-bottom:20px;
+}
+.input-box{
+    margin-bottom:15px;
+}
+.input-box input{
+    width:100%;
+    padding:10px 15px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    outline:none;
+    font-size:1rem;
+}
+button{
+    width:100%;
+    padding:10px;
+    background:#B22222;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+button:hover{
+    background:#fe5b3d;
+}
+.switch{
+    margin-top:15px;
+    font-size:0.9rem;
+}
+.switch a{
+    color:#B22222;
+    font-weight:500;
+    text-decoration:none;
+}
+.switch a:hover{
+    color:#fe5b3d;
+}
+
+/* Footer */
+footer{
+    background:linear-gradient(to right,#B22222,#fe5b3d);
+    color:#fff;
+    text-align:center;
+    padding:20px 10px;
+    margin-top:20px;
+}
+
+/* Responsive */
+@media(max-width:576px){
+    header{padding:10px 20px;}
+    .form-container{padding:30px 20px;}
+}
