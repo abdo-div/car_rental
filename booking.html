@@ -1,61 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
-    <title>Booking | Car Rental</title>
-    <link rel="stylesheet" href="css/style5.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تأكيد الحجز</title>
+    <!-- ربط ملف التنسيق -->
+    
+    <!-- مكتبة الأيقونات -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- تنبيهات مخصصة -->
+    <link rel="stylesheet" href="css/custom_alert.css">
+    <!-- تنسيق صفحة الحجز (الجديد) -->
+    <link rel="stylesheet" href="css/style5.css">
+
 </head>
+
 <body>
+    <!-- الرأس -->
+    <header>
+        <a href="index.html" class="logo"> <img src="images/jeep.png" alt="الشعار"></a>
+       
+    </header>
 
-<header>
-    <div class="logo">
-         <a href="index.html"><img src="images/jeep.png" alt="Logo"></a>
-    </div>
-</header>
+    <section class="booking-container">
+        <h1>إتمام الحجز</h1>
+        <br>
 
-<section class="booking">
-    <h1>Confirm Your Booking</h1>
-    <p>Please review your booking details before confirmation.</p>
-
-    <div class="booking-card">
-        <img src="images/car6.jpg" alt="Car Image">
-
-        <div class="booking-info">
-            <h2>Porsche </h2>
-
-            <div class="info-row">
-                <span>Pickup Location:</span>
-                <span>Tripoli</span>
-            </div>
-
-            <div class="info-row">
-                <span>Pickup Date:</span>
-                <span>12 / 06 / 2025</span>
-            </div>
-
-            <div class="info-row">
-                <span>Return Date:</span>
-                <span>12 / 07 / 2025</span>
-            </div>
-
-            <div class="price">
-                <span>Total Price:</span>
-                <strong>$2,500</strong>
-            </div>
-
-            <form action="index.html">
-                <button type="submit" class="btn">Confirm Booking</button>
-            </form>
+        <!-- تفاصيل السيارة المختارة -->
+        <!-- Selected Car Details -->
+        <div class="car-details" id="car-details">
+            <img id="car-image" src="" alt="صورة السيارة">
+            <h2 id="car-name">اسم السيارة</h2>
+            <h3 id="car-price">السعر</h3>
         </div>
-    </div>
-</section>
 
-<footer>
-    <p> &copy; CET Web Developers All Right Reserved</p>
-</footer>
+        <!-- نموذج الحجز -->
+        <!-- Booking Form -->
+        <form class="booking-form">
+            <div class="form-group">
+                <label>موقع الاستلام</label>
+                <select required>
+                    <option value="">اختر الموقع</option>
+                    <option value="airport">المطار</option>
+                    <option value="city-center">وسط المدينة</option>
+                    <option value="branch1">فرع الشمال</option>
+                </select>
+            </div>
 
+            <div class="form-group">
+                <label>تاريخ الاستلام</label>
+                <input type="date" required>
+            </div>
+
+            <div class="form-group">
+                <label>تاريخ الإرجاع</label>
+                <input type="date" required>
+            </div>
+
+            <button type="submit" class="submit-btn" id="confirm-btn">تأكيد الحجز</button>
+        </form>
+    </section>
+
+    <!-- ربط ملفات الجافا سكريبت -->
+    <!-- main.js يحتوي على التنبيهات المخصصة -->
+    <script src="js/main.js"></script>
+    <!-- booking.js يحتوي على منطق صفحة الحجز -->
+    <script src="js/booking.js"></script>
 </body>
+
 </html>
-
-
