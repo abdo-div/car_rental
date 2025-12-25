@@ -1,97 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>car rental website</title>
+    <title>موقع تأجير السيارات</title>
+    <!-- ربط ملف التنسيق -->
+    <!-- Link CSS file -->
     <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- مكتبة الأيقونات -->
+    <!-- Icons Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- الخطوط -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- تنبيهات مخصصة -->
+    <link rel="stylesheet" href="css/custom_alert.css">
 </head>
+
 <body>
+    <!-- بداية الرأس -->
+    <!-- Header Start -->
     <header>
-        <a href="#" class="logo"> <img src="images/jeep.png" alt=""></a>
-        
+        <a href="#" class="logo"> <img src="images/jeep.png" alt="الشعار"></a>
 
         <ul class="navbar">
-            <li> <a href="#home">Home</a></li>
-            <li> <a href="#ride">Ride</a></li>
-            <li> <a href="#services">Services</a></li>
-            <li> <a href="#about">About</a></li>
-            <li> <a href="#reviews">Reviews</a></li>
-        
+            <li> <a href="#home">الرئيسية</a></li>
+            <li> <a href="#ride">كيف نعمل</a></li>
+            <li> <a href="#services">خدماتنا</a></li>
+            <li> <a href="#about">من نحن</a></li>
+            <li> <a href="#reviews">الآراء</a></li>
         </ul>
-            <div class="header-btn">
-                <a href="signup.html" class="sign-up">Sign up </a>
-                <a href="signin.html" class="sign-in">Sign in </a>
-
-            </div>
+        <div class="header-btn">
+            <a href="signup.html" class="sign-up">إنشاء حساب</a>
+            <a href="signin.html" class="sign-in">تسجيل الدخول</a>
+        </div>
     </header>
-    <!--home-->
+    <!-- نهاية الرأس -->
+    <!-- Header End -->
+
+    <!-- قسم الصفحة الرئيسية -->
+    <!-- Home Section -->
     <section class="home" id="home">
         <div class="text">
-            <h1><span>Looking</span> to <br>rent a car</h1>
-            <p>Your journey starts with the right car.</p>
+            <h1><span>هل تبحث</span> عن <br>استئجار سيارة؟</h1>
+            <p>رحلتك تبدأ بالسيارة المناسبة.</p>
             <div class="app-stores">
-                <img src="images/ios.png" alt="">
-                <img src="images/512x512.png" alt="">
+                <img src="images/ios.png" alt="آب ستور">
+                <img src="images/512x512.png" alt="جوجل بلاي">
             </div>
         </div>
-        <div class="form-container">
-            <form action="">
-                <div class="input-box">
-                    <span>location</span>
-                    <input type="search" name="" id="" placeholder="Search places">
-                </div>
-                <div class="input-box">
-                    <span>Pick-up date</span>
-                    <input type="date" name="" id="">
-                </div>
-                     <div class="input-box">
-                    <span>Retutn date</span>
-                    <input type="date" name="" id="">
-                </div>
-                <input type="submit" class="btn" value="submet">
-            </form>
-
-        </div>
-
-
+     
     </section>
+
+    <!-- قسم كيفية العمل -->
+    <!-- Ride Section -->
     <section class="ride" id="ride">
         <div class="heading">
-            <span>how its work</span>
-            <h1>Rent with 3 easy steps</h1>
+            <span>كيف نعمل</span>
+            <h1>استأجر في 3 خطوات سهلة</h1>
         </div>
         <div class="ride-container">
             <div class="box">
                 <i class="bx bxs-map"></i>
-                <h2>Choose a location</h2>
-                <p>Choose your preferred pickup location from our wide range of branches and airports. Whether you’re planning a short city trip or a long journey, selecting the right location ensures a smooth and convenient rental experience. Our fleet of modern vehicles is ready and waiting at every location, making it easy for you to start your adventure without any hassle. Simply select the location that suits your schedule and travel plans, and get ready to hit the road with comfort and confidence.</p>
+                <h2>اختر موقعاً</h2>
+                <p>اختر موقع الاستلام المفضل لديك من بين مجموعة واسعة من الفروع والمطارات. سواء كنت تخطط لرحلة قصيرة
+                    داخل المدينة أو رحلة طويلة، فإن اختيار الموقع المناسب يضمن تجربة تأجير سلسة ومريحة.</p>
             </div>
-              <div class="box">
-                 <i class="bx bxs-calendar-check"></i>
-                <h2>Pick-up Date</h2>
-                <p>Select the date you want to pick up your rental car. Planning ahead helps ensure the car you want is available and ready for you. You can choose a date that fits your travel schedule, whether it’s a quick trip around the city or a long-distance journey. Picking the right date in advance also allows you to take advantage of special offers and ensures a smooth, stress-free start to your rental experience.</p>
+            <div class="box">
+                <i class="bx bxs-calendar-check"></i>
+                <h2>تاريخ الاستلام</h2>
+                <p>حدد التاريخ الذي تريد استلام سيارتك فيه. التخطيط المسبق يساعد على ضمان توفر السيارة التي تريدها.
+                    يمكنك اختيار تاريخ يناسب جدول سفرك، مما يتيح لك الاستفادة من العروض الخاصة.</p>
             </div>
-              <div class="box">
-             <i class="bx bxs-car-garage"></i>
-                <h2>book a car</h2>
-                <p>Choose your preferred car from our wide selection of vehicles to suit your style and travel needs. Whether you’re looking for a sporty ride, a luxurious sedan, or a practical family car, we have the perfect option ready for you. Booking in advance ensures availability and allows you to plan your trip with confidence. Simply select the car that matches your preferences, and get ready to enjoy a smooth, comfortable, and memorable driving experience.
-</p></p>
+            <div class="box">
+                <i class="bx bxs-car-garage"></i>
+                <h2>احجز سيارة</h2>
+                <p>اختر سيارتك المفضلة من بين مجموعة واسعة من المركبات لتناسب أسلوبك واحتياجات سفرك. سواء كنت تبحث عن
+                    سيارة رياضية، أو سيدان فاخرة، أو سيارة عائلية عملية، لدينا الخيار الأمثل لك.</p>
             </div>
         </div>
-
     </section>
 
-    <!--services-->
+    <!-- قسم الخدمات (السيارات) -->
+    <!-- Services Section -->
     <section class="service" id="services">
-         <div class="heading">
-            <span>best Services</span>
-            <h1>Explore our top deals <br>From top rated dealers </h1>
+        <div class="heading">
+            <span>أفضل الخدمات</span>
+            <h1>استكشف أفضل عروضنا <br>من وكلاء مصنفين</h1>
         </div>
         <div class="services-container">
             <div class="box">
@@ -99,158 +100,166 @@
                     <img src="images/car1.jpg" alt="">
                 </div>
                 <p>2015</p>
-                <h3>2018 honda civic Performance</h3>
-                <h2>$52500 | $330 <span>/month</span> </h2>
-                <a href="booking.html" class="btn"> Rent Now</a>
+                <h3>2018 هوندا سيفيك أداء</h3>
+                <h2>52500$ | 330$ <span>/شهر</span> </h2>
+                <!-- زر الحجز يستدعي دالة جافا سكريبت -->
+                <!-- Rent button calls JavaScript function -->
+                <a href="javascript:void(0)" class="btn"
+                    onclick="rentCar('2018 هوندا سيفيك أداء', '330', 'images/car1.jpg')">احجز الآن</a>
             </div>
 
-
-              <div class="box">
+            <div class="box">
                 <div class="box-img">
                     <img src="images/car2.jpg" alt="">
                 </div>
                 <p>2020</p>
-                <h3>2018 honda civic Comfort</h3>
-                <h2>$54500 | $358 <span>/month</span> </h2>
-               <a href="booking.html" class="btn"> Rent Now</a>
+                <h3>2018 هوندا سيفيك راحة</h3>
+                <h2>54500$ | 358$ <span>/شهر</span> </h2>
+                <a href="javascript:void(0)" class="btn"
+                    onclick="rentCar('2018 هوندا سيفيك راحة', '358', 'images/car2.jpg')">احجز الآن</a>
             </div>
 
-              <div class="box">
+            <div class="box">
                 <div class="box-img">
                     <img src="images/car3.jpg" alt="">
                 </div>
                 <p>2016</p>
-                <h3>2018 honda civic Premium</h3>
-                <h2>$56500 | $300 <span>/month</span> </h2>
-                <a href="booking.html" class="btn"> Rent Now</a>
+                <h3>2018 هوندا سيفيك بريميوم</h3>
+                <h2>56500$ | 300$ <span>/شهر</span> </h2>
+                <a href="javascript:void(0)" class="btn"
+                    onclick="rentCar('2018 هوندا سيفيك بريميوم', '300', 'images/car3.jpg')">احجز الآن</a>
             </div>
 
-
-              <div class="box">
+            <div class="box">
                 <div class="box-img">
                     <img src="images/car4.jpg" alt="">
                 </div>
                 <p>2017</p>
-                <h3>2018 honda civic Racing</h3>
-                <h2>$50000 | $260 <span>/month</span> </h2>
-               <a href="booking.html" class="btn"> Rent Now</a>
+                <h3>2018 هوندا سيفيك سباق</h3>
+                <h2>50000$ | 260$ <span>/شهر</span> </h2>
+                <a href="javascript:void(0)" class="btn"
+                    onclick="rentCar('2018 هوندا سيفيك سباق', '260', 'images/car4.jpg')">احجز الآن</a>
             </div>
 
-
-              <div class="box">
+            <div class="box">
                 <div class="box-img">
                     <img src="images/car5.jpg" alt="">
                 </div>
                 <p>2022</p>
-                <h3>2018 honda civic Sport</h3>
-                <h2>$59000 | $400 <span>/month</span> </h2>
-                <a href="booking.html" class="btn"> Rent Now</a>
+                <h3>2018 هوندا سيفيك سبورت</h3>
+                <h2>59000$ | 400$ <span>/شهر</span> </h2>
+                <a href="javascript:void(0)" class="btn"
+                    onclick="rentCar('2018 هوندا سيفيك سبورت', '400', 'images/car5.jpg')">احجز الآن</a>
             </div>
 
-              <div class="box">
+            <div class="box">
                 <div class="box-img">
                     <img src="images/car6.jpg" alt="">
                 </div>
                 <p>2021</p>
-                <h3>2018 Porsche 911 GT3</h3>
-                <h2>$79,600 | 1,200  <span>/month</span> </h2>
-                <a href="booking.html" class="btn"> Rent Now</a>
+                <h3>2018 بورش 911 جي تي 3</h3>
+                <h2>79,600$ | 1,200$ <span>/شهر</span> </h2>
+                <a href="javascript:void(0)" class="btn"
+                    onclick="rentCar('2018 بورش 911 جي تي 3', '1200', 'images/car6.jpg')">احجز الآن</a>
             </div>
-            <a href="cars.html" class="btn" id="btn"> show all cars</a>
-
+            <a href="cars.html" class="btn" id="btn">عرض كل السيارات</a>
         </div>
     </section>
 
-    <!--about-->
+    <!-- قسم من نحن -->
+    <!-- About Section -->
     <section class="about" id="about">
-         <div class="heading">
-            <span>About us</span>
-            <h1>Best Customer Experience</h1>
+        <div class="heading">
+            <span>من نحن</span>
+            <h1>أفضل تجربة للعملاء</h1>
         </div>
         <div class="about-container">
             <div class="about-img">
                 <img src="images/Red-Lexus-Free-PNG-Image.png" alt="">
             </div>
             <div class="about-text">
-                <span>about us</span>
-                <p>At <strong>SONIC CARS</strong>, we provide a wide range of modern, reliable vehicles to make your travel simple and enjoyable. Our team is dedicated to ensuring a smooth rental experience from start to finish.
-                </p>
-                <p>With convenient pickup locations and flexible rental options, we make it easy to hit the road with confidence. Whether for business or leisure, your comfort and satisfaction are our top priorities.</p>
-                <a href="about.html" class="btn">learn more </a>
+                <span>عن الشركة</span>
+                <p>في <strong>SONIC CARS</strong>، نوفر مجموعة واسعة من المركبات الحديثة والموثوقة لجعل سفرك بسيطًا
+                    وممتعًا. فريقنا مكرس لضمان تجربة تأجير سلسة من البداية إلى النهاية.</p>
+                <p>مع مواقع استلام ملائمة وخيارات تأجير مرنة، نجعل من السهل الانطلاق على الطريق بثقة. سواء للعمل أو
+                    الترفيه، فإن راحتك ورضاك هما أولويتنا القصوى.</p>
+                <a href="about.html" class="btn">اعرف المزيد</a>
             </div>
         </div>
     </section>
 
-    <!--reviews-->
+    <!-- قسم الآراء -->
+    <!-- Reviews Section -->
     <section class="reviews" id="reviews">
-         <div class="heading">
-            <span>Reviews</span>
-            <h1>What our customers say</h1>
+        <div class="heading">
+            <span>الآراء</span>
+            <h1>ماذا يقول عملاؤنا</h1>
         </div>
         <div class="reviews-container">
             <div class="box">
                 <div class="rev-img">
                     <img src="images/rev1.jpg" alt="">
                 </div>
-                <h2>James Wilson</h2>
+                <h2>جيمس ويلسون</h2>
                 <div class="stars">
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star-half"></i>
-
-                    
                 </div>
-                <p>I had an amazing experience renting a car from [Your Company Name]. The booking process was smooth, and the staff were incredibly helpful. The car was clean, modern, and ready exactly when I needed it. It made my trip stress-free and enjoyable, and I felt confident knowing I was driving a reliable vehicle. I would definitely rent from them again and recommend them to anyone looking for convenience and quality.</p>
+                <p>كانت تجربتي رائعة في استئجار سيارة. عملية الحجز كانت سلسة، والموظفون كانوا متعاونين للغاية. كانت
+                    السيارة نظيفة وحديثة. جعلت رحلتي خالية من التوتر وممتعة.</p>
             </div>
 
-
-             <div class="box">
+            <div class="box">
                 <div class="rev-img">
                     <img src="images/rev2.jpg" alt="">
                 </div>
-                <h2>Daniel Thompson</h2>
+                <h2>دانيال طومسون</h2>
                 <div class="stars">
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star-half"></i>
-
-                    
                 </div>
-                <p>From start to finish, my rental experience was excellent. The team made sure I understood all the options and helped me choose a car that suited my needs perfectly. Pickup and drop-off were quick and easy, and the vehicle itself exceeded my expectations. It’s rare to find such a professional service that genuinely cares about the customer experience. I’ll be using their services for all my future trips.</p>
+                <p>تجربة استئجار ممتازة من البداية إلى النهاية. تأكد الفريق من أنني فهمت جميع الخيارات وساعدوني في
+                    اختيار السيارة التي تناسب احتياجاتي تمامًا.</p>
             </div>
 
-             <div class="box">
+            <div class="box">
                 <div class="rev-img">
                     <img src="images/rev3.jpg" alt="">
                 </div>
-                <h2>Olivia Martinez</h2>
+                <h2>أوليفيا مارتينيز</h2>
                 <div class="stars">
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star-half"></i>
-
-                    
                 </div>
-                <p>I was very impressed with the level of service and attention to detail. The car was in perfect condition, and the entire rental process was simple and efficient. The staff went out of their way to ensure everything went smoothly, and I felt valued as a customer. Traveling with a reliable, comfortable car made my journey much more enjoyable. Highly recommend [Your Company Name] for anyone looking for a hassle-free car rental experience.</p>
+                <p>أعجبت جدًا بمستوى الخدمة والاهتمام بالتفاصيل. السيارة كانت في حالة ممتازة، وعملية التأجير بأكملها
+                    كانت بسيطة وفعالة. أنصح بهم بشدة.</p>
             </div>
         </div>
     </section>
-    <!--newsletter-->
+
+    <!-- قسم النشرة البريدية -->
+    <!-- Newsletter Section -->
     <section class="newsletter">
-        <h2>Subscribe To Newsletter</h2>
+        <h2>اشترك في النشرة البريدية</h2>
         <div class="box">
-            <input type="text " placeholder="Enter your Email">
-            <a href="#" class="btn"> Subscribe</a>
+            <input type="text " placeholder="أدخل بريدك الإلكتروني">
+            <a href="#" class="btn">اشترك</a>
         </div>
     </section>
+
+    <!-- حقوق النشر -->
+    <!-- Copyright -->
     <div class="copyright">
-        <p>&#169; CET Web Developers All Right Reserved</p>
+        <p>&#169; مطورو الويب CET جميع الحقوق محفوظة</p>
         <div class="social">
             <a href="#"> <i class="bx bxl-facebook"></i></a>
             <a href="#"> <i class="bx bxl-twitter"></i></a>
@@ -258,7 +267,9 @@
         </div>
     </div>
 
-    
+    <!-- ربط ملف الجافا سكريبت -->
+    <!-- Link JavaScript File -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
