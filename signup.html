@@ -1,46 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sign Up | Car Rental</title>
-<link rel="stylesheet" href="css/style3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب | تأجير السيارات</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style3.css">
+    <!-- تنبيهات مخصصة -->
+    <link rel="stylesheet" href="css/custom_alert.css">
 </head>
+
 <body>
 
-<header>
-    <div class="logo">
-        <a href="index.html"><img src="images/jeep.png" alt="Logo"></a>
-    </div>
-    <div class="header-btn">
-        <a href="signin.html" class="sign-in">Sign In</a>
-    </div>
-</header>
-
-<main>
-    <div class="form-container">
-        <h2>Sign Up</h2>
-        <form>
-            <div class="input-box">
-                <input type="text" placeholder="Full Name" required>
-            </div>
-            <div class="input-box">
-                <input type="email" placeholder="Email" required>
-            </div>
-            <div class="input-box">
-                <input type="password" placeholder="Password" required>
-            </div>
-            <button type="submit">Sign Up</button>
-        </form>
-        <div class="switch">
-            Already have an account? <a href="signin.html">Sign In</a>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/jeep.png" alt="الشعار"></a>
         </div>
-    </div>
-</main>
+        <div class="header-btn">
+            <a href="signin.html" class="sign-in">تسجيل الدخول</a>
+        </div>
+    </header>
 
-<footer>
-    &copy; CET Web Developers All Right Reserved
-</footer>
+    <main>
+        <div class="form-container">
+            <h2>إنشاء حساب</h2>
+            <!-- نموذج إنشاء الحساب -->
+            <form onsubmit="registerUser(event)">
+                <div class="input-box">
+                    <input type="text" id="signup-name" placeholder="الاسم الكامل" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="signup-email" placeholder="البريد الإلكتروني" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="signup-password" placeholder="كلمة المرور" required>
+                </div>
+                <!-- زر إنشاء الحساب -->
+                <button type="submit">إنشاء حساب</button>
+            </form>
+            <div class="switch">
+                لديك حساب بالفعل؟ <a href="signin.html">تسجيل الدخول</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; حقوق النشر محفوظة لمطوري الويب CET
+    </footer>
+
+    <!-- ربط ملف الجافا سكريبت -->
+    <script src="js/main.js"></script>
 
 </body>
+
 </html>
