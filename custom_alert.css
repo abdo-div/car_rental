@@ -1,0 +1,123 @@
+/* ================================================= */
+/* Custom Alert Styles (Custom Alert Styles)        */
+/* ================================================= */
+
+/* تغشية الخلفية */
+/* Overlay Backdrop */
+.custom-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    backdrop-filter: blur(5px);
+    /* Soft blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    /* Stay on top of everything */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* حالة العرض */
+/* Active State */
+.custom-alert-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* صندوق التنبيه */
+/* Alert Box Container */
+.custom-alert-box {
+    background: #fff;
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(0.8);
+
+    font-family: 'Cairo', sans-serif;
+}
+
+/* حركة الظهور */
+/* Scale Up Animation */
+.custom-alert-overlay.active .custom-alert-box {
+    transform: scale(1);
+}
+
+/* الأيقونة */
+/* Icon Circle */
+.custom-alert-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+/* نوع النجاح */
+/* Success Icon */
+.custom-alert-icon.success {
+    background: linear-gradient(to bottom right, #28a745, #218838);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+/* نوع الخطأ */
+/* Error Icon */
+.custom-alert-icon.error {
+    background: linear-gradient(to bottom right, #B22222, #fe5b3d);
+    box-shadow: 0 5px 15px rgba(178, 34, 34, 0.3);
+}
+
+/* العنوان */
+/* Title */
+.custom-alert-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* الرسالة */
+/* Message Text */
+.custom-alert-message {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* زر الإغلاق */
+/* Close Button */
+.custom-alert-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to right, #B22222, #fe5b3d);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    
+    box-shadow: 0 5px 15px rgba(178, 34, 34, 0.2);
+}
+
+.custom-alert-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(178, 34, 34, 0.3);
+}
+
+.custom-alert-btn:active {
+    transform: translateY(1px);
+}
