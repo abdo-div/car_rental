@@ -153,3 +153,4 @@ function confirmBooking() {
     // Call custom alert with button text "Okay"
     showAlert('success', title, message, 'index.html', 'حسنًا');
 }
+
