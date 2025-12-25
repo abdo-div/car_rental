@@ -1,4 +1,6 @@
-*{
+/* إعادة تعيين عامة */
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,17 +8,20 @@
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
-    font-family: Montserrat;
+    font-family: 'Cairo', sans-serif;
 }
 
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
 
-
-
-section{
+section {
     padding: 50px 100px;
-    
 }
-header{
+
+/* الرأس */
+header {
     position: fixed;
     top: 0;
     right: 0;
@@ -27,60 +32,76 @@ header{
     justify-content: space-between;
     background: #eeeff1;
     padding: 15px 100px;
+}
 
+/* تحسينات RTL */
+/* RTL Improvements */
+#spn {
+    margin-right: 70px;
+    /* RTL Change: margin-left -> margin-right */
+    color: red;
 }
- #spn{
-    margin-left: 70px;
-    color:red;
-}
-.logo img{
+
+.logo img {
     width: 40px;
 }
-.logo img:hover{
+
+.logo img:hover {
     transform: scale(1.1);
 }
 
-.navbar{
+.navbar {
     display: flex;
 }
-.navbar li{
+
+.navbar li {
     position: relative;
 }
-.navbar a{
+
+.navbar a {
     font-size: 1rem;
     padding: 10px 20px;
     color: #444;
     font-weight: 500;
 }
-.navbar a:hover{
-    color:  red;
+
+.navbar a:hover {
+    color: red;
 }
-.header-btn a{
-    padding: 10px 20px ;
-    color:#444;
+
+.header-btn a {
+    padding: 10px 20px;
+    color: #444;
     font-weight: 500;
 
 }
-.header-btn .sign-in{
+
+.header-btn .sign-in {
     background: #B22222;
     color: #fff;
     border-radius: 0.5rem;
 }
-.header-btn .sign-in:hover{
+
+.header-btn .sign-in:hover {
     background: #FF3B30;
 }
-.header-btn .sign-up:hover{
-    color:  #FF3B30;
+
+.header-btn .sign-up:hover {
+    color: #FF3B30;
 }
-.services-container{
+
+/* حاوية الخدمات */
+.services-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* desktop */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* desktop */
     gap: 2rem;
     margin-top: 2rem;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
+
 .heading {
     display: flex;
     flex-direction: column;
@@ -88,17 +109,20 @@ header{
     align-items: center;
     margin-top: 50px;
 }
-.heading span{
+
+.heading span {
     margin: 0;
 }
-.services-container .box{
+
+.services-container .box {
     padding: 20px;
     border-radius: 1rem;
     box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
 }
-.services-container .box:hover{
-   transform: scale(1.1);
-   cursor: pointer;
+
+.services-container .box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .services-container .box .box-img {
@@ -106,37 +130,44 @@ header{
     height: 200px;
 
 }
-.services-container .box .box-img img{
+
+.services-container .box .box-img img {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
     object-fit: cover;
     object-position: center;
 }
-.services-container .box p{
-    padding: 0 10px ;
+
+.services-container .box p {
+    padding: 0 10px;
     border: 1px solid #444;
     width: 58px;
     border-radius: 0.5rem;
     margin: 1rem 0 1rem;
 
 }
-.services-container .box h3{
+
+.services-container .box h3 {
     font-weight: 500;
 }
-.services-container .box h2{
+
+.services-container .box h2 {
     font-size: 1.1rem;
-    font-weight:600 ;
-    color:red;
-    margin: 0.2rem 0 0 0.5rem;
+    font-weight: 600;
+    color: red;
+    margin: 0.2rem 0.5rem 0 0;
+    /* RTL Change: padding adjusted */
 }
-.services-container .box h2 span{
+
+.services-container .box h2 span {
     font-size: 0.8rem;
-    font-weight:  500;
+    font-weight: 500;
     color: #444;
 
 }
-.services-container .box .btn{
+
+.services-container .box .btn {
     display: flex;
     justify-content: center;
     background: #B22222;
@@ -144,20 +175,25 @@ header{
     padding: 10px;
     border-radius: 0.5rem;
 }
-.services-container .box .btn:hover{
-    background:#fe5b3d;
+
+.services-container .box .btn:hover {
+    background: #fe5b3d;
 }
-.newsletter{
-    background: linear-gradient(to top right,  #B22222, #FF3B30);
+
+/* النشرة البريدية */
+.newsletter {
+    background: linear-gradient(to top right, #B22222, #FF3B30);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.newsletter h2{
+
+.newsletter h2 {
     color: #fff;
     font-size: 1.8rem;
 }
-.footer-newsletter .box{
+
+.footer-newsletter .box {
     margin-top: 1rem;
     background: #fff;
     border-radius: 0.5rem;
@@ -166,32 +202,41 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.footer-newsletter .box input{
+
+.footer-newsletter .box input {
     border: none;
     outline: none;
+    text-align: right;
+    /* RTL Change */
 }
-.footer-newsletter .box .btn{
+
+.footer-newsletter .box .btn {
     background: #b11e1e;
     color: #fff;
     padding: 8px 20px;
     border-radius: 0.5rem;
     margin-bottom: 0;
 }
-.footer-newsletter .box .btn:hover{
-    background:#fe5b3d;
+
+.footer-newsletter .box .btn:hover {
+    background: #fe5b3d;
 }
 
-.copyright{
+/* حقوق النشر */
+.copyright {
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.social a{
+
+.social a {
     color: #444;
     padding: 10px;
     font-size: 21px;
 }
+
+/* التذييل */
 .footer {
     background: linear-gradient(to right, #B22222, #fe5b3d);
     color: #fff;
@@ -201,7 +246,7 @@ header{
 
 .footer-container {
     display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     padding: 0 100px;
 }
@@ -232,7 +277,8 @@ header{
 
 .footer-social a {
     font-size: 1.4rem;
-    margin-right: 10px;
+    margin-left: 10px;
+    /* RTL Change */
     transition: transform 0.3s;
 }
 
@@ -240,15 +286,15 @@ header{
     transform: scale(1.2);
 }
 
-
-
 .footer-bottom {
     text-align: center;
     padding: 15px 0;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     margin-top: 30px;
     font-size: 0.9rem;
 }
+
+/* الأجهزة اللوحية */
 /*  TABLET  */
 @media (max-width: 991px) {
     header {
@@ -265,8 +311,8 @@ header{
     }
 
     .footer-container {
-       
-        grid-template-columns: 1fr 1fr; 
+
+        grid-template-columns: 1fr 1fr;
         padding: 0 40px;
     }
 }
@@ -316,7 +362,8 @@ header{
     }
 
     #spn {
-        margin-left: 0;
+        margin-right: 0;
+        /* RTL Change */
         text-align: center;
     }
 
