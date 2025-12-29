@@ -97,7 +97,7 @@ header {
     /* desktop */
     gap: 2rem;
     margin-top: 2rem;
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -306,7 +306,7 @@ header {
     }
 
     .services-container {
-        width: 90%;
+        
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -323,6 +323,10 @@ header {
         padding: 12px 30px;
         flex-wrap: wrap;
         gap: 10px;
+        justify-content: center;
+    }
+    .service{
+        padding-top: 100px;
     }
 
     .navbar {
@@ -338,8 +342,9 @@ header {
     }
 
     .services-container {
+       
         grid-template-columns: 1fr;
-        width: 100%;
+        width: 70%;
     }
 
     .footer-container {
@@ -372,6 +377,9 @@ header {
         justify-content: center;
         flex-wrap: wrap;
         gap: 6px;
+    }
+    .service{
+        padding-top: 120px;
     }
 
     .navbar a {
