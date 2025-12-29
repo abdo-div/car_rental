@@ -97,7 +97,7 @@ header {
     /* desktop */
     gap: 2rem;
     margin-top: 2rem;
-    width: 90%;
+    width: 90% !important ;
     margin-left: auto;
     margin-right: auto;
 }
@@ -323,7 +323,7 @@ header {
         padding: 12px 30px;
         flex-wrap: wrap;
         gap: 10px;
-        justify-content: center;
+        justify-content: center !important ;
     }
     .service{
         padding-top: 100px;
@@ -344,7 +344,7 @@ header {
     .services-container {
        
         grid-template-columns: 1fr;
-        width: 70%;
+        width: 70% !important ;
     }
 
     .footer-container {
@@ -379,7 +379,7 @@ header {
         gap: 6px;
     }
     .service{
-        padding-top: 120px;
+        padding-top: 120px !important ;
     }
 
     .navbar a {
@@ -433,3 +433,4 @@ header {
         font-size: 0.8rem;
     }
 }
+
