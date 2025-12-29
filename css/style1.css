@@ -326,7 +326,7 @@ header {
         justify-content: center !important ;
     }
     .service{
-        padding-top: 100px;
+        padding-top: 100px !important;
     }
 
     .navbar {
@@ -433,4 +433,5 @@ header {
         font-size: 0.8rem;
     }
 }
+
 
